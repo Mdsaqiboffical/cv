@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins" 'Times New Roman', Times, sans-serif;
+    background: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 4em 0; */
+    /* overflow: hidden; */
+}
+
+/* start-left */
+
+.left-container {
+    position: relative;
+    background-color: #222222;
+    height: 140vh;
+    width: 18em;
+    border-radius: 2px;
+}
+
+.profile-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: .8em 4em;
+}
+
+.img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    display: inherit;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+
+.profile-name div {
+    color: #b32d04;
+    margin-top: .5em;
+}
+
+.line {
+    border: 1px solid rgb(181, 181, 181);
+    margin-top: 1em;
+}
+
+.contact-info {
+    margin-left: 1em;
+}
+
+.contact-info h2 {
+    color: #b32d04;
+    margin: .5em;
+    border-bottom: 2px solid #000;
+    width: 150px;
+}
+
+.contact-info .pera {
+    padding: .4em;
+    color: #fff;
+}
+
+.pera .icon {
+    color: #1988bc;
+    margin: 2px 8px;
+}
+
+.education {
+    margin-left: 1em;
+}
+
+.education h2 {
+    color: #b32d04;
+    margin: .5em;
+    border-bottom: 2px solid #000;
+    width: 110px;
+}
+
+.since {
+    padding: .6em;
+    color: #fff;
+    font-size: 18px;
+}
+
+.education p {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-left: 1em;
+}
+
+.lang {
+    margin-left: 1em;
+}
+
+.lang h2 {
+    color: #b32d04;
+    margin: .5em;
+    border-bottom: 2px solid #000;
+    width: 110px;
+}
+
+.lang h5 {
+    padding: .5em;
+    color: #fff;
+    font-size: 18px;
+}
+
+.lang .eng {
+    border: 2px solid black;
+    width: 15em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.lang .eng div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+.lang .ur {
+    border: 2px solid black;
+    width: 15em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.lang .ur div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+/* close-left */
+
+/* start-right */
+
+.right-container {
+    position: relative;
+    background-color: #d0d0d0;
+    height: 140vh;
+    width: 30em;
+    border-radius: 2px;
+}
+
+.summary {
+    margin-left: 1em;
+    margin-top: 4em;
+}
+
+.summary h2 {
+    color: #2d3a4a;
+    margin: .5em;
+    border-bottom: 2px solid #000;
+    width: 100px;
+}
+
+.summary .sum-p {
+    color: #000000;
+    margin-left: 1em;
+}
+
+.Experience {
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.Experience h2 {
+    color: #2d3a4a;
+    margin: .5em;
+    border-bottom: 2px solid #000;
+    width: 115px;
+}
+
+.Experience p {
+    color: #6c2323;
+    font-size: 20px;
+}
+
+.Experience div {
+    padding: 8px;
+    color: #000;
+}
+
+.Experience .li {
+    padding: 5px;
+}
+
+.skills {
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.skills h2 {
+    color: #2d3a4a;
+    margin: .5em;
+    border-bottom: 2px solid #000;
+    width: 60px;
+}
+
+.skills h5 {
+    padding: .5em;
+    color: #6c2323;
+    font-size: 18px;
+}
+
+.skills .html {
+    border: 2px solid black;
+    width: 25em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.skills .html div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+.skills .css {
+    border: 2px solid black;
+    width: 25em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.skills .css div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+.skills .js {
+    border: 2px solid black;
+    width: 25em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.skills .js div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+.skills .-node-js {
+    border: 2px solid black;
+    width: 25em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.skills .-node-js div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+.skills .pytn {
+    border: 2px solid black;
+    width: 25em;
+    margin-left: .5em;
+    margin-top: 6px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+
+.skills .pytn div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1988bc;
+    border-radius: 20px;
+}
+
+/* close-right */
