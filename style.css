@@ -14,13 +14,26 @@ body {
     /* overflow: hidden; */
 }
 
+.main-container {
+    overflow-x: hidden !important;
+    /* overflow-y: hidden !important; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 100px;
+    /* background-color: #fff; */
+  }
+
 /* start-left */
 
 .left-container {
     position: relative;
     background-color: #222222;
-    height: 140vh;
-    width: 18em;
+    height: 100%;
+    width: 22em;
     border-radius: 2px;
 }
 
@@ -28,7 +41,7 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin: .8em 4em;
+    margin: .8em 6em;
 }
 
 .img {
@@ -119,7 +132,7 @@ body {
 
 .lang .eng {
     border: 2px solid black;
-    width: 15em;
+    width: 18em;
     margin-left: .5em;
     margin-top: 6px;
     height: 10px;
@@ -140,7 +153,7 @@ body {
 
 .lang .ur {
     border: 2px solid black;
-    width: 15em;
+    width: 18em;
     margin-left: .5em;
     margin-top: 6px;
     height: 10px;
@@ -159,6 +172,10 @@ body {
     border-radius: 20px;
 }
 
+.ur {
+margin-bottom: 1em;
+}
+
 /* close-left */
 
 /* start-right */
@@ -166,7 +183,7 @@ body {
 .right-container {
     position: relative;
     background-color: #d0d0d0;
-    height: 140vh;
+    height: 100%;
     width: 30em;
     border-radius: 2px;
 }
@@ -337,4 +354,50 @@ body {
     border-radius: 20px;
 }
 
+.pytn {
+    margin-bottom: 1em;
+}
+
 /* close-right */
+
+@media screen and (max-width:720px) {
+    h2 {
+       font-size: 1.5em;
+       font-weight: 900;
+     }
+}
+
+@media screen and (max-width:1000px) {
+   .main-container {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 10px;
+      width: 100%;
+    }
+    .left-container {
+        width: 100%;
+    }
+    .profile-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-info, .education, .lang {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+    .summary, .Experience, .skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
